@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
     <title>Welington Hopka</title>
     <link rel="icon" href="https://w7.pngwing.com/pngs/138/546/png-transparent-mortarboard-illustration-square-academic-cap-graduation-ceremony-graduation-cap-cdr-angle-hat.png" type="image/x-icon">
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            margin: 0;
+            margin-top: 0;
             padding: 0;
             /* Fundo em degradê: do azul claro ao branco */
             background: linear-gradient(to right, #a2c2e1, #f4f4f4);
@@ -42,6 +45,53 @@
         .social-links img:hover {
             transform: scale(1.1);
         }
+        .content-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin-top: 20px;
+        }
+        .content-wrapper img {
+            width: 25%;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+        .portfolio-links {
+            text-align: left;
+            border: inset 10px #333;
+            margin-top: 10px;
+            
+            
+        }
+        .portfolio-links h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .portfolio-links ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .portfolio-links ul li {
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .portfolio-links ul li a {
+            text-decoration: none;
+            color: #007bff;
+            transition: color 0.3s;
+        }
+        .portfolio-links ul li a:hover {
+            color: #0056b3;
+        }
+        .assinatura {
+            font-size: smaller;
+            font-family: "Playwrite CU", cursive;
+            font-style: underline;
+            
+        }
+        footer{
+            text-align: right;
+        }
     </style>
 </head>
 <body>
@@ -54,9 +104,26 @@
             <li><a href="https://www.linkedin.com/in/welington-hopka/" target="_blank"><img src="https://th.bing.com/th/id/R.a330e248626552a23af35e5c46526234?rik=aCeYEG%2f6vtPYGg&pid=ImgRaw&r=0" alt="LinkedIn"></a></li>
             <li><a href="https://www.youtube.com/@welingtonhopka" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"></a></li>
             <li><a href="https://www.duolingo.com/profile/Welington_Hopka1" target="_blank"><img src="https://companieslogo.com/img/orig/DUOL-5baebe62.png?t=1660638203" alt="Duolingo"></a></li>
-            <!-- Adicione outros links conforme necessário -->
         </ul>
-        <img src="./img/minhatela.jpg" alt="Minha Foto" style="width: 30%; margin-top: 20px;">
+
+        <div class="content-wrapper">
+            <!-- Foto -->
+            <img src="https://scontent.fsjk4-1.fna.fbcdn.net/v/t39.30808-6/441954606_460635549849736_67234718317331567_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeEZV28-uAgxxFdI0OVzZy86C9o51BKT28cL2jnUEpPbx83BMvHDsLpx14RvG-L0iMc6EVxRWqiDKlX6lZ3rvZjF&_nc_ohc=ha14zb6tiIgQ7kNvgHa2QgA&_nc_ht=scontent.fsjk4-1.fna&_nc_gid=AWALtO7E-SM0eNdKbzWG5Eu&oh=00_AYCUXL5x8sEFiUW0QmHVHQsWAOyAVOZaOcBs2DvUkoq8Aw&oe=66E8D5BD" alt="Minha Foto">
+            
+            <!-- Links do Portfólio -->
+            <div class="portfolio-links">
+                <h2 style="text-align: center;">Meu Portfólio</h2>
+                <ul>
+                    <li><a href="https://mypage-chi-cyan.vercel.app/" target="_blank">Projeto 1: Meu Site Pessoal</a></li>
+                    <li><a href="http://carrosantigostaubate.great-site.net/" target="_blank">Projeto 2: Site Carros Antigos Taubaté</a></li>
+                    <li><a href="https://main-portal-tau.vercel.app/" target="_blank">Projeto 3: Vestibulinho Senai Pindamonhangaba</a></li>
+                    <!-- <li><a href="https://meu-site4.com" target="_blank">Projeto 4: Loja Virtual</a></li> -->
+                    <!-- Adicione mais projetos conforme necessário -->
+                </ul>
+            </div>
+        </div>
     </div>
+    <footer>
+        <p>Desenvolvido por <span class="assinatura">&copy Welington Hopka</span> </p>
 </body>
 </html>
