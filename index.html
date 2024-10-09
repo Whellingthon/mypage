@@ -11,7 +11,21 @@
     
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<script>
+    const swiper = new Swiper('.swiper', {
+    loop: true,
+    speed: 600,  // Velocidade de transição em milissegundos
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
 
+</script>
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -142,6 +156,11 @@
             height: 100%;
             object-fit: cover;
         }
+        @keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
 
         /* Estilos Responsivos */
         @media (max-width: 768px) {
