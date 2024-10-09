@@ -79,6 +79,7 @@
             border-radius: 8px;
             background-color: #f8f9fa;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            
         }
 
         .portfolio-links h2 {
@@ -108,6 +109,21 @@
         .portfolio-links ul li a:hover {
             color: #0056b3;
         }
+        #bloco{
+             width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+        }
+        @keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
 
         footer {
             margin-top: 20px;
@@ -209,6 +225,7 @@ a.three:hover {
             </div>
             
             <!-- Links do Portfólio -->
+           <div classe="bloco">
             <div class="portfolio-links">
                 <h2>Meu Portfólio</h2>
                 <ul>
@@ -217,6 +234,7 @@ a.three:hover {
                     <li><a class="three" href="https://main-portal-tau.vercel.app/" target="_blank">Projeto 3: Vestibulinho Senai Pindamonhangaba</a></li>
                 </ul>
             </div>
+           </div>
         </div>
     </div>
     <footer>
