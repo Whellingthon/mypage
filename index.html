@@ -194,6 +194,25 @@ a.three:hover {
                 font-size: 0.75rem;
             }
         }
+        .transition{
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s;
+}
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s;
+}
+
+#div1 {transition-timing-function: linear;}
+#div2 {transition-timing-function: ease;}
+#div3 {transition-timing-function: ease-in;}
+#div4 {transition-timing-function: ease-out;}
+#div5 {transition-timing-function: ease-in-out;}
+
 
     </style>
 </head>
@@ -229,7 +248,7 @@ a.three:hover {
             <div class="portfolio-links">
                 <h2>Meu Portfólio</h2>
                 <ul>
-                    <li><a class="three" href="https://mypage-chi-cyan.vercel.app/" target="_blank">Projeto 1: Meu Site Pessoal</a></li>
+                    <div class="transition"> <li><a class="three" href="https://mypage-chi-cyan.vercel.app/" target="_blank">Projeto 1: Meu Site Pessoal</a></li></div>
                     <li><a class="three" href="http://carrosantigostaubate.great-site.net/" target="_blank">Projeto 2: Site Carros Antigos Taubaté</a></li>
                     <li><a class="three" href="https://main-portal-tau.vercel.app/" target="_blank">Projeto 3: Vestibulinho Senai Pindamonhangaba</a></li>
                 </ul>
