@@ -1,198 +1,353 @@
-<!DOCTYPE HTML>
-<!--
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Professor Welington Hopka</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professor Welington Hopka</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+    <style>
+        .hero-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+        }
+        .section-divider {
+            height: 150px;
+            overflow: hidden;
+        }
+        .swiper-slide img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        .testimonial-card:hover {
+            transform: translateY(-10px);
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-white shadow-md">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-indigo-600">Welington Hopka</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="text-gray-700 hover:text-indigo-600">About Me</a>
+                <a href="#education" class="text-gray-700 hover:text-indigo-600">Education</a>
+                <a href="#students" class="text-gray-700 hover:text-indigo-600">Students</a>
+                <a href="#portfolio" class="text-gray-700 hover:text-indigo-600">Portfolio</a>
+                <a href="#contact" class="text-gray-700 hover:text-indigo-600">Contact</a>
+            </div>
+            <button class="md:hidden focus:outline-none" id="menu-toggle">
+                <i data-feather="menu"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="hidden md:hidden bg-white w-full" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#about" class="block px-3 py-2 text-gray-700 hover:text-indigo-600">About Me</a>
+                <a href="#education" class="block px-3 py-2 text-gray-700 hover:text-indigo-600">Education</a>
+                <a href="#students" class="block px-3 py-2 text-gray-700 hover:text-indigo-600">Students</a>
+                <a href="#portfolio" class="block px-3 py-2 text-gray-700 hover:text-indigo-600">Portfolio</a>
+                <a href="#contact" class="block px-3 py-2 text-gray-700 hover:text-indigo-600">Contact</a>
+            </div>
+        </div>
+    </nav>
 
-	</head>
-	<body class="is-preload">
+    <!-- Hero Section -->
+    <section id="hero" class="hero-bg min-h-screen flex items-center justify-center text-white" data-vanta-waves>
+        <div class="container mx-auto px-6 text-center" data-aos="fade-up">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">Professor <span class="text-indigo-400">Welington Hopka</span></h1>
+            <p class="text-xl md:text-2xl mb-8 italic">"The art of teaching is the art of assisting discovery." <br>- Mark Van Doren</p>
+            <a href="#about" class="inline-block px-8 py-3 bg-indigo-600 hover:bg-indigo-700 rounded-full text-white font-semibold transition duration-300">Get Started</a>
+        </div>
+    </section>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16" data-aos="fade-up">About Me</h2>
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/3 mb-10 lg:mb-0" data-aos="fade-right">
+                    <img src="http://static.photos/education/640x360/1" alt="Professor Hopka" class="rounded-lg shadow-xl w-full max-w-md mx-auto">
+                </div>
+                <div class="lg:w-2/3 lg:pl-16" data-aos="fade-left">
+                    <p class="text-lg mb-6">
+                        I am a Vocational Training Instructor at SENAI Pindamonhangaba/SP, with extensive experience in IT, telecommunications, and technical support, having worked at companies like Connectis, Atacadão and Claro Brazil.
+                    </p>
+                    <p class="text-lg mb-6">
+                        I hold a degree in Systems Analysis and Development from FATEC-SP, Pedagogy from UNESP, a Postgraduate degree in Mobile Application Development and IT in Education from UNIVIRTUA, and I'm currently pursuing a Master's degree in Big Data and Business Intelligence from ENEB.
+                    </p>
+                    <p class="text-lg">
+                        My teaching philosophy revolves around fostering critical thinking and practical application of knowledge to prepare students for the challenges of the modern workplace.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-					</header>
+    <!-- Education Section -->
+    <section id="education" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16" data-aos="fade-up">Academic Background</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-indigo-600 mb-4">
+                        <i data-feather="book" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Systems Analysis and Development</h3>
+                    <p>FATEC-SP</p>
+                    <p class="text-gray-500">Completed</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-indigo-600 mb-4">
+                        <i data-feather="book-open" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Pedagogy</h3>
+                    <p>UNESP</p>
+                    <p class="text-gray-500">Completed</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-indigo-600 mb-4">
+                        <i data-feather="award" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Mobile Applications Development</h3>
+                    <p>UNIVIRTUA</p>
+                    <p class="text-gray-500">Postgraduate</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="400">
+                    <div class="text-indigo-600 mb-4">
+                        <i data-feather="code" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">IT in Education</h3>
+                    <p>UNIVIRTUA</p>
+                    <p class="text-gray-500">Postgraduate</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="500">
+                    <div class="text-indigo-600 mb-4">
+                        <i data-feather="bar-chart-2" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Big Data & Business Intelligence</h3>
+                    <p>ENEB</p>
+                    <p class="text-gray-500">Master's (In Progress)</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="600">
+                    <div class="text-indigo-600 mb-4">
+                        <i data-feather="briefcase" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Professional Experience</h3>
+                    <p class="mb-2">SENAI Pindamonhangaba</p>
+                    <p class="mb-2">Connectis, Atacadão, Claro Brazil</p>
+                    <p class="text-gray-500">IT, Telecom, Support</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-				<!-- Menu -->
-					<nav id="menu">
-						<ul class="links">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="landing.html">Meus Alunos</a></li>
-							<li><a href="generic.html">Formação Acadêmica</a></li>
-							<li><a href="elements.html">Portifólio</a></li>
-						</ul>
-						
-					</nav>
+    <!-- Students Section -->
+    <section id="students" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16" data-aos="fade-up">My Students</h2>
+            <!-- Image Carousel -->
+            <div class="swiper-container mb-12">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="http://static.photos/education/1024x576/1" alt="Students working" class="w-full h-96 object-cover rounded-lg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="http://static.photos/education/1024x576/2" alt="Classroom" class="w-full h-96 object-cover rounded-lg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="http://static.photos/education/1024x576/3" alt="Learning" class="w-full h-96 object-cover rounded-lg">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <div class="text-center max-w-3xl mx-auto">
+                <p class="text-lg mb-8" data-aos="fade-up">
+                    My greatest pride are my students who successfully enter the job market and transform their lives through education. I believe in practical, project-based learning that prepares them for real-world challenges.
+                </p>
+            </div>
+        </div>
+    </section>
 
-				<!-- Banner -->
-					<section id="banner" class="major">
-						<div class="inner">
-							<header class="major">
-								<h1>Professor <em>Welington Hopka</em></h1>
-							</header>
-							<div class="content">
-								<p>"The art of teaching is the art of assisting discovery." <br> <em>Mark Van Doren</em></p>
-								<ul class="actions">
-									<li><a href="#one" class="button next scrolly">Início</a></li>
-								</ul>
-							</div>
-						</div>
-					</section>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16" data-aos="fade-up">My Portfolio</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                    <img src="http://static.photos/technology/640x360/1" alt="Project 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Educational Platform</h3>
+                        <p class="text-gray-600">An interactive learning platform developed for SENAI students</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                    <img src="http://static.photos/technology/640x360/2" alt="Project 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Mobile Application</h3>
+                        <p class="text-gray-600">Android/iOS app for vocational training management</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="300">
+                    <img src="http://static.photos/technology/640x360/3" alt="Project 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Research Papers</h3>
+                        <p class="text-gray-600">Published research on IT education methodologies</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="400">
+                    <img src="http://static.photos/technology/640x360/4" alt="Project 4" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Curriculum Development</h3>
+                        <p class="text-gray-600">Designed vocational training programs in IT</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="500">
+                    <img src="http://static.photos/technology/640x360/5" alt="Project 5" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Workshops</h3>
+                        <p class="text-gray-600">Conducted professional development workshops</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="600">
+                    <img src="http://static.photos/technology/640x360/6" alt="Project 6" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Corporate Training</h3>
+                        <p class="text-gray-600">Custom training programs for companies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-				<!-- Main -->
-					<div id="main">
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-indigo-700 text-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16" data-aos="fade-up">Contact Me</h2>
+            <div class="flex flex-col lg:flex-row">
+                <div class="lg:w-1/2 mb-10 lg:mb-0 lg:pr-10" data-aos="fade-right">
+                    <form action="https://formsubmit.co/welingtonhopka@hotmail.com" method="POST" class="space-y-6">
+                        <div>
+                            <label for="name" class="block mb-2">Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-2 rounded-lg bg-indigo-800 border border-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-400">
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-2">Email</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-2 rounded-lg bg-indigo-800 border border-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-400">
+                        </div>
+                        <div>
+                            <label for="message" class="block mb-2">Message</label>
+                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 rounded-lg bg-indigo-800 border border-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-400"></textarea>
+                        </div>
+                        <button type="submit" class="px-6 py-3 bg-white text-indigo-700 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">Send Message</button>
+                    </form>
+                </div>
+                <div class="lg:w-1/2 lg:pl-10" data-aos="fade-left">
+                    <div class="mb-8">
+                        <div class="flex items-center mb-4">
+                            <i data-feather="mail" class="mr-4"></i>
+                            <span>welingtonhopka@hotmail.com</span>
+                        </div>
+                        <div class="flex items-center mb-4">
+                            <i data-feather="link" class="mr-4"></i>
+                            <a href="https://mypage-chi-cyan.vercel.app/index.html" class="hover:underline">www.welingtonhopka.com</a>
+                        </div>
+                        <div class="flex items-center">
+                            <i data-feather="map-pin" class="mr-4"></i>
+                            <span>Pindamonhangaba, SP, Brazil</span>
+                        </div>
+                    </div>
+                    <div class="flex space-x-6">
+                        <a href="https://www.facebook.com/profile.php?id=100077098840627" class="hover:text-indigo-300"><i data-feather="facebook"></i></a>
+                        <a href="https://www.instagram.com/welington_hopka/" class="hover:text-indigo-300"><i data-feather="instagram"></i></a>
+                        <a href="https://github.com/Whellingthon" class="hover:text-indigo-300"><i data-feather="github"></i></a>
+                        <a href="https://www.linkedin.com/in/welington-hopka/" class="hover:text-indigo-300"><i data-feather="linkedin"></i></a>
+                        <a href="https://www.youtube.com/@welingtonhopka" class="hover:text-indigo-300"><i data-feather="youtube"></i></a>
+                        <a href="https://wa.me/5514997669155" class="hover:text-indigo-300"><i data-feather="phone"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-						<!-- One -->
-							<section id="one" class="tiles">
-								<article>
-									<span class="image">
-										<img src="images/minhatela.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="generic.html" class="link">Formação Acadêmica</a></h3>
-										
-									</header>
-								</article>
-								<article>
-									<header class="major">
-										<h3><a href="landing.html" class="link"></a>Meus Alunos</a></h3>
-										
-									</header>
-									
-									<div class="content-wrapper">
-										<!-- Carrossel Swiper -->
-										<div class="swiper image">
-											<div class="swiper-wrapper">
-												<div class="swiper-slide"><img src="images/foto2.jpg" alt="Slide 1"></div>
-												<div class="swiper-slide"><img src="images/foto3.jpg" alt="Slide 2"></div>
-												<div class="swiper-slide"><img src="images/foto4.jpg" alt="Slide 3"></div>
-												<div class="swiper-slide"><img src="images/minhatela.jpg" alt="Slide 3"></div>
-											</div>
-											<!-- Controles de navegação -->
-											<div class="swiper-pagination"></div>
-											<div class="swiper-button-next"></div>
-											<div class="swiper-button-prev"></div>
-										</div>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-10">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col items-center">
+                <p class="mb-6">&copy; 2023 Professor Welington Hopka. All rights reserved.</p>
+                <div class="flex space-x-6 mb-6">
+                    <a href="#" class="hover:text-indigo-400">Privacy Policy</a>
+                    <a href="#" class="hover:text-indigo-400">Terms of Service</a>
+                </div>
+                <p>Passionate about education and technology.</p>
+            </div>
+        </div>
+    </footer>
 
-								</article>
-								<article>
-									<span class="image col-md-12">
-										<img src="images/pic12.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="elements.html" class="link">Meu Portifólio</a></h3>
-										
-									</header>
-								</article>
-								
-								
-
-						<!-- Two -->
-							<section id="two">
-								<div class="inner">
-									<header class="major">
-										<h2>Sobre Mim</h2>
-									</header>
-									<p>Sou Instrutor de Formação Profissional no SENAI Pindamonhangaba/SP, com ampla experiência em TI, telecomunicações e suporte técnico, atuando em empresas como Connectis, Atacadão e Claro Brasil. Possuo formação em Análise e Desenvolvimento de Sistemas pela FATEC-SP, Pedagogia pela UNESP, Pós-graduação em Desenvolvimento de Aplicações Móveis e Informática da Educação pela UNIVIRTUA, além de Mestrado em Big Data e Business Intelligence pela ENEB (em andamento).</p>
-
-
-									</div>
-							</section>
-
-					</div>
-
-				<!-- Contact -->
-					<section id="contact">
-						<div class="inner">
-							<section>
-								<form method="post" action="https://formsubmit.co/welingtonhopka@hotmail.com">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="6"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Clear" /></li>
-									</ul>
-								</form>
-							</section>
-							<section class="split">
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-envelope"></span>
-										<h3>Email</h3>
-										<a href="#">welingtonhopka@hotmail.com</a>
-									</div>
-								</section>
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-globe"></span>
-										<h3>Website</h3>
-										<a href="https://mypage-chi-cyan.vercel.app/index.html">www.welingtonhopka.com</a>
-									</div>
-								</section>
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-map-marker-alt"></span>
-										<h3>Location</h3>
-										<span>Pindamonhangaba, SP, Brazil</span>
-									</div>
-								</section>
-							</section>
-						</div>
-					</section>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">
-							<ul class="icons">
-								<li><a href="https://www.facebook.com/profile.php?id=100077098840627" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="https://www.instagram.com/welington_hopka/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="https://github.com/Whellingthon" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								<li><a href="https://www.linkedin.com/in/welington-hopka/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-								<li><a href="https://www.youtube.com/@welingtonhopka" class="icon brands alt fa-youtube"><span class="label">YouTube</span></a></li>
-								<li><a href="https://wa.me/5514997669155" class="icon brands alt fa-whatsapp"><span class="label">WhatsApp</span></a></li>
-							</ul>
-							<ul class="copyright">
-								<li>&copy; Welington Hopka. Todos os direitos reservados.</li><li>
-							</ul>
-						</div>
-					</footer>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+        
+        // Initialize Vanta.js waves background
+        VANTA.WAVES({
+            el: "#hero",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x3a86ff,
+            shininess: 27.00,
+            waveHeight: 20.00,
+            waveSpeed: 0.75,
+            zoom: 0.75
+        });
+        
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Initialize Swiper after icons are loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            feather.replace();
+            
+            // Initialize Swiper if it exists on the page
+            if (typeof Swiper !== 'undefined') {
+                new Swiper('.swiper-container', {
+                    loop: true,
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                    autoplay: {
+                        delay: 5000,
+                    },
+                });
+            }
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</body>
 </html>
