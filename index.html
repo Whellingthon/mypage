@@ -1,47 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Professor Welington Hopka</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <script src="https://unpkg.com/feather-icons"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
-    <style>
-        .hero-bg {
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
-        }
-        .section-divider {
-            height: 150px;
-            overflow: hidden;
-        }
-        .swiper-slide img {
-            width: 100%;
-            height: 400px;
-            object-fit: cover;
-        }
-        .testimonial-card {
-            transition: all 0.3s ease;
-        }
-        .testimonial-card:hover {
-            transform: translateY(-10px);
-        }
-    </style>
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="font-sans bg-gray-50">
     <!-- Navbar -->
     <nav class="fixed w-full z-50 bg-white shadow-md">
         <div class="container mx-auto px-6 py-3 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-indigo-600">Welington Hopka</a>
+            <a href="#" class="text-2xl font-bold text-indigo-600">ProfessorWelington Hopka</a>
             <div class="hidden md:flex space-x-8">
-                <a href="#about" class="text-gray-700 hover:text-indigo-600">About Me</a>
-                <a href="#education" class="text-gray-700 hover:text-indigo-600">Education</a>
-                <a href="#students" class="text-gray-700 hover:text-indigo-600">Students</a>
-                <a href="#portfolio" class="text-gray-700 hover:text-indigo-600">Portfolio</a>
-                <a href="#contact" class="text-gray-700 hover:text-indigo-600">Contact</a>
+                <a href="#about" class="text-gray-700 hover:text-indigo-600">Sobre Mim</a>
+                <a href="#education" class="text-gray-700 hover:text-indigo-600">Área Acadêmica</a>
+                <a href="#students" class="text-gray-700 hover:text-indigo-600">Alunos</a>
+                <a href="#portfolio" class="text-gray-700 hover:text-indigo-600">Meu Portfólio</a>
+                <a href="#contact" class="text-gray-700 hover:text-indigo-600">Contato</a>
             </div>
             <button class="md:hidden focus:outline-none" id="menu-toggle">
                 <i data-feather="menu"></i>
@@ -50,11 +27,11 @@
         <!-- Mobile Menu -->
         <div class="hidden md:hidden bg-white w-full" id="mobile-menu">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a href="#about" class="block px-3 py-2 text-gray-700 hover:text-indigo-600">About Me</a>
-                <a href="#education" class="block px-3 py-2 text-gray-700 hover:text-indigo-600">Education</a>
-                <a href="#students" class="block px-3 py-2 text-gray-700 hover:text-indigo-600">Students</a>
-                <a href="#portfolio" class="block px-3 py-2 text-gray-700 hover:text-indigo-600">Portfolio</a>
-                <a href="#contact" class="block px-3 py-2 text-gray-700 hover:text-indigo-600">Contact</a>
+                <a href="#about" class="block px-3 py-2 text-gray-700 hover:text-indigo-600">Sobre Mim</a>
+                <a href="#education" class="block px-3 py-2 text-gray-700 hover:text-indigo-600">Área Acadêmica</a>
+                <a href="#students" class="block px-3 py-2 text-gray-700 hover:text-indigo-600">Alunos</a>
+                <a href="#portfolio" class="block px-3 py-2 text-gray-700 hover:text-indigo-600">Portfólio</a>
+                <a href="#contact" class="block px-3 py-2 text-gray-700 hover:text-indigo-600">Contato</a>
             </div>
         </div>
     </nav>
@@ -62,8 +39,8 @@
     <!-- Hero Section -->
     <section id="hero" class="hero-bg min-h-screen flex items-center justify-center text-white" data-vanta-waves>
         <div class="container mx-auto px-6 text-center" data-aos="fade-up">
-            <h1 class="text-5xl md:text-7xl font-bold mb-6">Professor <span class="text-indigo-400">Welington Hopka</span></h1>
-            <p class="text-xl md:text-2xl mb-8 italic">"The art of teaching is the art of assisting discovery." <br>- Mark Van Doren</p>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">Professor <span class="text-indigo-400">Professor Welington Hopka</span></h1>
+            <p class="text-xl md:text-2xl mb-8 italic">"A arte de ensinar é a arte de auxiliar a descoberta." <br>- Mark Van Doren</p>
             <a href="#about" class="inline-block px-8 py-3 bg-indigo-600 hover:bg-indigo-700 rounded-full text-white font-semibold transition duration-300">Get Started</a>
         </div>
     </section>
@@ -71,20 +48,20 @@
     <!-- About Section -->
     <section id="about" class="py-20 bg-white">
         <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-16" data-aos="fade-up">About Me</h2>
+            <h2 class="text-4xl font-bold text-center mb-16" data-aos="fade-up">Sobre mim</h2>
             <div class="flex flex-col lg:flex-row items-center">
                 <div class="lg:w-1/3 mb-10 lg:mb-0" data-aos="fade-right">
-                    <img src="http://static.photos/education/640x360/1" alt="Professor Hopka" class="rounded-lg shadow-xl w-full max-w-md mx-auto">
+                    <img src="img/20240819_152459.jpg" alt="Professor Hopka" class="rounded-lg shadow-xl w-full max-w-md mx-auto">
                 </div>
                 <div class="lg:w-2/3 lg:pl-16" data-aos="fade-left">
                     <p class="text-lg mb-6">
-                        I am a Vocational Training Instructor at SENAI Pindamonhangaba/SP, with extensive experience in IT, telecommunications, and technical support, having worked at companies like Connectis, Atacadão and Claro Brazil.
+                        Sou Instrutor de Formação Profissional no SENAI Pindamonhangaba/SP, com ampla experiência em TI, telecomunicações e suporte técnico, tendo trabalhado em empresas como Connectis, Atacadão e Claro Brasil.
                     </p>
                     <p class="text-lg mb-6">
-                        I hold a degree in Systems Analysis and Development from FATEC-SP, Pedagogy from UNESP, a Postgraduate degree in Mobile Application Development and IT in Education from UNIVIRTUA, and I'm currently pursuing a Master's degree in Big Data and Business Intelligence from ENEB.
+                        Possuo graduação em Análise e Desenvolvimento de Sistemas pela FATEC-SP, Pedagogia pela UNESP, pós-graduação em Desenvolvimento de Aplicativos Móveis e TI na Educação pela UNIVIRTUA, e atualmente estou cursando mestrado em Big Data e Business Intelligence pela ENEB.
                     </p>
                     <p class="text-lg">
-                        My teaching philosophy revolves around fostering critical thinking and practical application of knowledge to prepare students for the challenges of the modern workplace.
+                        Minha filosofia de ensino gira em torno de estimular o pensamento crítico e a aplicação prática do conhecimento para preparar os alunos para os desafios do mercado de trabalho moderno.
                     </p>
                 </div>
             </div>
@@ -94,29 +71,29 @@
     <!-- Education Section -->
     <section id="education" class="py-20 bg-gray-100">
         <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-16" data-aos="fade-up">Academic Background</h2>
+            <h2 class="text-4xl font-bold text-center mb-16" data-aos="fade-up">Área Acadêmica</h2>
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="bg-white p-8 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
                     <div class="text-indigo-600 mb-4">
                         <i data-feather="book" class="w-10 h-10"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Systems Analysis and Development</h3>
+                    <h3 class="text-xl font-bold mb-4">Análise e Desenvolvimento de Sistemas</h3>
                     <p>FATEC-SP</p>
-                    <p class="text-gray-500">Completed</p>
+                    <p class="text-gray-500">Concluído</p>
                 </div>
                 <div class="bg-white p-8 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="200">
                     <div class="text-indigo-600 mb-4">
                         <i data-feather="book-open" class="w-10 h-10"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Pedagogy</h3>
+                    <h3 class="text-xl font-bold mb-4">Pedagogia</h3>
                     <p>UNESP</p>
-                    <p class="text-gray-500">Completed</p>
+                    <p class="text-gray-500">Concluído</p>
                 </div>
                 <div class="bg-white p-8 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="300">
                     <div class="text-indigo-600 mb-4">
                         <i data-feather="award" class="w-10 h-10"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Mobile Applications Development</h3>
+                    <h3 class="text-xl font-bold mb-4">Desenvolvimento de Aplicativos Móveis</h3>
                     <p>UNIVIRTUA</p>
                     <p class="text-gray-500">Postgraduate</p>
                 </div>
@@ -124,9 +101,9 @@
                     <div class="text-indigo-600 mb-4">
                         <i data-feather="code" class="w-10 h-10"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">IT in Education</h3>
+                    <h3 class="text-xl font-bold mb-4">Informática e Ludopedagogia</h3>
                     <p>UNIVIRTUA</p>
-                    <p class="text-gray-500">Postgraduate</p>
+                    <p class="text-gray-500">Pós-graduação</p>
                 </div>
                 <div class="bg-white p-8 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="500">
                     <div class="text-indigo-600 mb-4">
@@ -134,16 +111,15 @@
                     </div>
                     <h3 class="text-xl font-bold mb-4">Big Data & Business Intelligence</h3>
                     <p>ENEB</p>
-                    <p class="text-gray-500">Master's (In Progress)</p>
+                    <p class="text-gray-500">Mestrado (Em andamento)</p>
                 </div>
                 <div class="bg-white p-8 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="600">
                     <div class="text-indigo-600 mb-4">
                         <i data-feather="briefcase" class="w-10 h-10"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Professional Experience</h3>
-                    <p class="mb-2">SENAI Pindamonhangaba</p>
-                    <p class="mb-2">Connectis, Atacadão, Claro Brazil</p>
-                    <p class="text-gray-500">IT, Telecom, Support</p>
+                    <h3 class="text-xl font-bold mb-4">Licenciatura em Matemática</h3>
+                    <p class="mb-2">FCE - Faculdade Campos Eliseos</p>
+                    <p class="text-gray-500">Concluído</p>
                 </div>
             </div>
         </div>
@@ -152,18 +128,51 @@
     <!-- Students Section -->
     <section id="students" class="py-20 bg-white">
         <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-16" data-aos="fade-up">My Students</h2>
+            <h2 class="text-4xl font-bold text-center mb-16" data-aos="fade-up">Meus Alunos</h2>
             <!-- Image Carousel -->
             <div class="swiper-container mb-12">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="http://static.photos/education/1024x576/1" alt="Students working" class="w-full h-96 object-cover rounded-lg">
+                        <img src="img/669F7FA6-8BDA-4A01-B3FB-887013F6FBD4.jpg" alt="Students working" class="w-full h-96 object-cover rounded-lg">
                     </div>
                     <div class="swiper-slide">
-                        <img src="http://static.photos/education/1024x576/2" alt="Classroom" class="w-full h-96 object-cover rounded-lg">
+                        <img src="img/20240202_165415.png" alt="Classroom" class="w-full h-96 object-cover rounded-lg">
                     </div>
                     <div class="swiper-slide">
-                        <img src="http://static.photos/education/1024x576/3" alt="Learning" class="w-full h-96 object-cover rounded-lg">
+                        <img src="img/20231215_215321.png" alt="Learning" class="w-full h-96 object-cover rounded-lg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/20240202_205747.png" alt="Learning" class="w-full h-96 object-cover rounded-lg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/20240412_205747.png" alt="Learning" class="w-full h-96 object-cover rounded-lg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/20240815_115813~2.jpg" alt="Learning" class="w-full h-96 object-cover rounded-lg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/20240819_152459.jpg" alt="Learning" class="w-full h-96 object-cover rounded-lg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/1732730374350 Copy.jpg" alt="Learning" class="w-full h-96 object-cover rounded-lg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/IMG_0168.png" alt="Learning" class="w-full h-96 object-cover rounded-lg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/IMG_0982.png" alt="Learning" class="w-full h-96 object-cover rounded-lg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/IMG_1544.png" alt="Learning" class="w-full h-96 object-cover rounded-lg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/IMG_1545.png" alt="Learning" class="w-full h-96 object-cover rounded-lg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/IMG_20230813_083108_073.jpg" alt="Learning" class="w-full h-96 object-cover rounded-lg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/IMG_20241204_215123.jpg" alt="Learning" class="w-full h-96 object-cover rounded-lg">
                     </div>
                 </div>
                 <div class="swiper-pagination"></div>
@@ -172,7 +181,7 @@
             </div>
             <div class="text-center max-w-3xl mx-auto">
                 <p class="text-lg mb-8" data-aos="fade-up">
-                    My greatest pride are my students who successfully enter the job market and transform their lives through education. I believe in practical, project-based learning that prepares them for real-world challenges.
+                    Meu maior orgulho são meus alunos que conseguem ingressar no mercado de trabalho e transformar suas vidas por meio da educação. Acredito em um ensino prático, baseado em projetos, que os prepara para desafios reais.
                 </p>
             </div>
         </div>
@@ -181,20 +190,23 @@
     <!-- Portfolio Section -->
     <section id="portfolio" class="py-20 bg-gray-100">
         <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-16" data-aos="fade-up">My Portfolio</h2>
+            <h2 class="text-4xl font-bold text-center mb-16" data-aos="fade-up">Meu Portfolio</h2>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="bg-white rounded-lg overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="100">
-                    <img src="http://static.photos/technology/640x360/1" alt="Project 1" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Educational Platform</h3>
-                        <p class="text-gray-600">An interactive learning platform developed for SENAI students</p>
-                    </div>
+                    <a href="https://main-portal-tau.vercel.app/" target="_blank" rel="noopener">
+                        <img src="http://static.photos/technology/640x360/1" alt="Project 1" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Plataforma Educacional</h3>
+                            <p class="text-gray-600">Uma plataforma de aprendizagem interativa desenvolvida para alunos do SENAI</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="bg-white rounded-lg overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="200">
-                    <img src="http://static.photos/technology/640x360/2" alt="Project 2" class="w-full h-48 object-cover">
+                    <a href="https://www.antigostaubate.com.br/" target="_blank" rel="noopener"></a>
+                    <img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=640&q=80" alt="Carro antigo" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Mobile Application</h3>
-                        <p class="text-gray-600">Android/iOS app for vocational training management</p>
+                        <h3 class="text-xl font-bold mb-2">CAAT - Clube De Autos Antigos de Taubaté</h3>
+                        <p class="text-gray-600">Site dedicado a carros antigos e eventos automotivos</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-lg overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="300">
@@ -293,60 +305,9 @@
         </div>
     </footer>
 
-    <script>
-        AOS.init({
-            duration: 800,
-            once: true
-        });
-        
-        // Initialize Vanta.js waves background
-        VANTA.WAVES({
-            el: "#hero",
-            mouseControls: true,
-            touchControls: true,
-            gyroControls: false,
-            minHeight: 200.00,
-            minWidth: 200.00,
-            scale: 1.00,
-            scaleMobile: 1.00,
-            color: 0x3a86ff,
-            shininess: 27.00,
-            waveHeight: 20.00,
-            waveSpeed: 0.75,
-            zoom: 0.75
-        });
-        
-        // Mobile menu toggle
-        const menuToggle = document.getElementById('menu-toggle');
-        const mobileMenu = document.getElementById('mobile-menu');
-        
-        menuToggle.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-        
-        // Initialize Swiper after icons are loaded
-        document.addEventListener('DOMContentLoaded', function() {
-            feather.replace();
-            
-            // Initialize Swiper if it exists on the page
-            if (typeof Swiper !== 'undefined') {
-                new Swiper('.swiper-container', {
-                    loop: true,
-                    pagination: {
-                        el: '.swiper-pagination',
-                        clickable: true,
-                    },
-                    navigation: {
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev',
-                    },
-                    autoplay: {
-                        delay: 5000,
-                    },
-                });
-            }
-        });
-    </script>
+    <script  type ="module" src="js/script.js"></script>
+      
+    
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </body>
